@@ -3,6 +3,7 @@ const qr=require("qrcode");
 const path=require("path");
 const bodyparser=require("body-parser");
 const app=express();
+
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.use(express.json());
